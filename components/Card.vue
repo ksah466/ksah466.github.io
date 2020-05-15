@@ -5,11 +5,12 @@
       <div class="font-bold text-xl mb-2">{{this.title}}</div>
       <p class="text-gray-700 text-base">{{this.description}}</p>
     </div>
-	<div class="p-4 mt-auto">
-	<a :href="this.url"
-	class="inline-block bg-blue-500 hover:bg-blue-700 text-white
-            font-bold py-2 px-4 rounded">Visit</a>
-	</div>
+    <div class="p-4 mt-auto">
+      <a
+        :href="this.url"
+        class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >Visit</a>
+    </div>
   </div>
 </template>
 
