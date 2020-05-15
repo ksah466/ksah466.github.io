@@ -3,7 +3,7 @@
     <card
       v-for="project in projects"
       :key="project.name"
-      :image="`https://image.thum.io/get/${project.homepage}`"
+      :image="`https://puppeteer-screenshot-api.glitch.me/?url=${project.homepage}`"
       :url="project.homepage"
       :title="project.name"
       :description="project.description"
