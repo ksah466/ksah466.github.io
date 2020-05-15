@@ -1,12 +1,11 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2">
-    <div v-for="project in projects" :key="project.name">
-      <card
-        :image="`https://image.thum.io/get/https://kaustav.ml/${project.name}`"
+  <div class="grid grid-cols-1 md:grid-cols-3">
+      <card v-for="project in projects" :key="project.name"
+        :image="`https://image.thum.io/get/${project.homepage}`"
+		:url="project.homepage"
         :title="project.name"
         :description="project.description"
       />
-    </div>
   </div>
 </template>
 
@@ -21,10 +20,11 @@ module.exports = {
             element =>
               element["has_pages"] && element["name"] != "ksah466.github.io"
           )
-          .map(({ name, description, updated_at }) => {
+          .map(({ name, description, homepage, updated_at }) => {
             return {
               name,
               description,
+			  homepage,
               updated_at
             };
           })
@@ -41,6 +41,3 @@ module.exports = {
   }
 };
 </script>
-
-<style>
-</style>
