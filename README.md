@@ -1,2 +1,0 @@
-# kaustav
-Site under construction :)
