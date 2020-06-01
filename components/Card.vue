@@ -1,6 +1,6 @@
 <template>
   <div class="m-2 max-w-sm rounded overflow-hidden shadow-lg flex flex-col">
-    <img class="w-full" :src="this.image" alt="Sunset in the mountains" />
+    <img class="w-full" :src="this.image" style="display: none" onload="this.style.display=''" />
     <div class="px-4 py-2">
       <div class="font-bold text-xl mb-2">{{this.title}}</div>
       <p class="text-gray-700 text-base">{{this.description}}</p>
