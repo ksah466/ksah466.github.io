@@ -1,0 +1,26 @@
+{
+  "name": "ksah466.github.io",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/*.html --no-content-hash --experimental-scope-hoisting --out-dir docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksah466/ksah466.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksah466/ksah466.github.io/issues"
+  },
+  "homepage": "https://github.com/ksah466/ksah466.github.io#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-svelte": "^4.0.6",
+    "svelte": "^3.25.1"
+  }
+}
