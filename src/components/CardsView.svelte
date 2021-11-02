@@ -11,6 +11,9 @@
     }
     fetch("https://api.kaustav.ml/projects")
       .then((data) => data.json())
+      .then((data) =>
+        data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+      )
       .then((data) => {
         projects = data;
         localStorage.setItem("projects", JSON.stringify(data));
